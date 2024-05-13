@@ -179,7 +179,7 @@ export const Register = () => {
                   onChange={handleLanguageChange}
                   renderValue={(selected: string[]) => selected.join(", ")}
                 >
-                  {["JavaScript", "NodeJs", "React", "HTML"].map((language) => (
+                  {["Hindi", "English", "Urdu", "Tamil"].map((language) => (
                     <MenuItem key={language} value={language}>
                       {language}
                     </MenuItem>
@@ -195,7 +195,7 @@ export const Register = () => {
                   onChange={handleSpecialtiesChange}
                   renderValue={(selected: string[]) => selected.join(", ")}
                 >
-                  {["Mern Stack", "Backend", "UI/UX", "Frontend"].map(
+                  {["Birth", "BUSINESS", "health", "Life issue"].map(
                     (specialty) => (
                       <MenuItem key={specialty} value={specialty}>
                         {specialty}

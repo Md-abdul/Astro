@@ -42,13 +42,7 @@ export const Home = () => {
     );
   }
 
-    // // Function to generate unique IDs for rows
-    // const generateUniqueIds = (data: Astrologer[]): Astrologer[] => {
-    //   return data.map((astrologer) => ({
-    //     ...astrologer,
-    //     id: '_' + Math.random().toString(36).substr(2, 9),
-    //   }));
-    // };
+
 
   if (error) {
     return <div>Error: {error}</div>;
@@ -58,8 +52,10 @@ export const Home = () => {
     {
       field: "profileImageUrl",
       headerName: "Profile Image",
-      width: 200,
-      renderCell: (params) => <img src={params.value} alt="Astrologer" />,
+      width: 100,
+      renderCell: (params) => <img src={params.value} alt="Astrologer" style={{ borderRadius: '50%', width: '80px', height: '50px' }} />,
+
+      // renderCell: (params) => <img src={params.value} alt="Astrologer" />,
     },
     { field: "name", headerName: "Name", width: 150 },
     { field: "gender", headerName: "Gender", width: 100 },
@@ -98,7 +94,8 @@ export const Home = () => {
       container
       justifyContent="center"
       alignItems="center"
-      height="80vh" 
+      // height="80vh"
+      marginTop={15} 
     >
       <Grid item xs={12} md={8} lg={10}>
         <Typography variant="h4" align="center" gutterBottom>
