@@ -4,7 +4,7 @@ Welcome to Astrologer, a web application where users can add, view, and edit ast
 
 ## Deployment Link
 
-[Link to the deployed website](https://astrolobharat.netlify.app/)
+[Link to the deployed website](https://astrobh.netlify.app/)
 
 ## Features
 
